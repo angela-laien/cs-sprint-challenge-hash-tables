@@ -3,6 +3,18 @@ def intersection(arrays):
     YOUR CODE HERE
     """
     # Your code here
+    storage = {}
+    result = []
+    for array in arrays:
+        for num in array:
+            if num in storage:
+                storage[num] += 1
+            else:
+                storage[num] = 1
+    
+    for num in storage:
+        if storage[num] > 1:
+            result.append(num)
 
     return result
 
