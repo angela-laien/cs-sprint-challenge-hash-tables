@@ -10,5 +10,9 @@ def reconstruct_trip(tickets, length):
     YOUR CODE HERE
     """
     # Your code here
+    # storage = {}
+    # route = []
 
+    # for ticket in tickets:
+    #     storage[ticket.source] = ticket.destination
     return route

@@ -3,7 +3,14 @@ def has_negatives(a):
     YOUR CODE HERE
     """
     # Your code here
-
+    storage = {}
+    result = []
+    for num in a:
+        if -num in storage:
+            result.append(abs(num))
+        else:
+            storage[num] = 1
+    
     return result
 
 
